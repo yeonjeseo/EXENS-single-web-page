@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXENS</title>
+
   <!-- BOXICON -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- CSS -->
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/slideshow.css">
-  <title>Document</title>
+  
+  <!-- JavaScript -->
   <script defer src="asset/js/main.js"></script>
 </head>
 
-testg
-
 <body>
   <!-- HEADER -->
-  <header class="l-header" id="header">
+  <header>
     <div class="nav bd-container">
       <a href="#" class="nav__logo">로고 자리</a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">HOME</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">ABOUT</a></li>
-          <li class="nav__item"><a href="#works" class="nav__link">WORKS</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">CONTACT</a></li>
+          <li class="nav__item"> <a href="#about" class="nav__link">ABOUT</a> </li>
+          <li class="nav__item"> <a href="#works" class="nav__link">WORKS</a> </li>
+          <li class="nav__item"> <a href="#contact" class="nav__link">CONTACT</a> </li>
         </ul>
       </div>
 
@@ -93,29 +94,27 @@ testg
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <!-- 교수님 인사말 / 보유 기술? -->
-    <section class="about" id="about">
+    <!-- ABOUT (CEO MESSAGE, 보유 특허) -->      
+    <section class="about">
       <div class="about__container bd-container">
-        <div class="about__ceo">
-          <span class="section__title">About</span>
-          <h2 class="section__subtitle">CEO Message</h2>
-          <div class="ceo__greeting">
-            <img class="ceo__avater" src="asset/img/greeting/yoon.jpeg" alt="yoon's avatar">
-            <div class="ceo__typo">
-              <p><h1>E</h1>다시 꾸미기XENS는 무인항공기(드론 및 고정익( 시장의 가치 창출을 위하여 신기술 개발 및 지원틀 통해 최고 수준의 무인기 공학 시스템(EXENS, EXtreme ENgineering System)을 연구하는 기업입니다.<br><br>EXENS는 무인항공기 분야의 벤처기업으로서 무인항공기 분야의 EXtreme ENgineering System 구현을 위해, 
-              <ul>
-                <li>- 소형 고정익 무인비행체</li>
-                <li>- Multi-Rotor 무인 드론</li>
-                <li>- 초소형 비행체 항공기</li>
-                <li>- 지능 구조물 시스템</li>
-              </ul>
-              관련 원천 기술을 개발하고, 신제품 개발에 실패가 없도록 고객사의 니즈에 부합한 맞춤형 솔루션을 제안하고 적요하는데 필요한 기술을 지원합니다.<br>
-              귀사께서 목표로 하는 최고의 제품을 개발하여 제공해드리는 파트너가 되도록 하겠습니다.
-            </p>
+        <h2>ABOUT</h2>
+          <h3>CEO Message</h3>
+            <div class="ceo__greeting">
+              <img class="ceo__avater" src="asset/img/greeting/yoon.jpeg" alt="yoon's avatar">
+              <div class="ceo__typo">
+                <p>EXENS는 무인항공기(드론 및 고정익(시장의 가치 창출을 위하여 신기술 개발 및 지원틀 통해 최고 수준의 무인기 공학 시스템(EXENS, EXtreme ENgineering System)을 연구하는 기업입니다.<br><br>EXENS는 무인항공기 분야의 벤처기업으로서 무인항공기 분야의 EXtreme ENgineering System 구현을 위해,        
+                <ul>
+                  <li>- 소형 고정익 무인비행체</li>
+                  <li>- Multi-Rotor 무인 드론</li>
+                  <li>- 초소형 비행체 항공기</li>
+                  <li>- 지능 구조물 시스템</li>
+                </ul>
+                  관련 원천 기술을 개발하고, 신제품 개발에 실패가 없도록 고객사의 니즈에 부합한 맞춤형 솔루션을 제안하고 적요하는데 필요한 기술을 지원합니다.<br>
+                  귀사께서 목표로 하는 최고의 제품을 개발하여 제공해드리는 파트너가 되도록 하겠습니다.
+              </p>
+              </div>
             </div>
-          </div>
-        </div>
+        
         <div class="about__patents">
           <ul class="patents__list">
             <li class="patent__item"></li>
@@ -128,24 +127,25 @@ testg
     </section>
 
     <!-- WORKS -->
-    <!-- PORTFOLIO / PARTNERS -->
     <section class="works" id="works">
       <div class="works__container bd-container">
         <div class="works__portfolio"></div>
-          <h2>PORTFOLIO</h2>
-          – FCC( Flight Control Computer ), GCS( Ground Control System ) 개발 <br>
-          – 감시 정찰용 MAV( Micro Air Vehicle ) 개발 ( Bhimasena Indonesia ) <br>
-          – 틸트 멀티콥터 UAV 개발 ( 중소기업청 ) <br>
-          – 농업용 멀티콥터 개발 <br>
-          – IOT 드론 개발 ( CISCO ) <br>
-          – 실내용 드론 개발 ( CISCO ) <br>
-          – 비행시험용 무인기 개발( 한화시스템 ) <br>
-          – 대대급 멀티 틸트콥터 무인기 Zephirus 개발 ( FineDNC ) <br>
-          – 레이다 정밀도 측정용 장비개발 ( 한화시스템 ) <br>
-          – 군집비행용 드론제어 시스템 개발 ( 국방과학연구소 ) <br>
-          – 3D 맵핑용 드론 개발( 두산인프라코어 ) <br>
-          – 미사일 모의비행체 개발( LIG nex1 ) <br>
-          – 레이저 데즐링용 드론개발 ( 국방과학연구소 ) <br>
+          <h2>WORKS</h2>
+          <ul>
+            <li>FCC( Flight Control Computer ), GCS( Ground Control System ) 개발 </li><br>
+            <li>감시 정찰용 MAV( Micro Air Vehicle ) 개발 ( Bhimasena Indonesia )</li> <br>
+            <li>틸트 멀티콥터 UAV 개발 ( 중소기업청 )</li><br>
+            <li>농업용 멀티콥터 개발</li> <br>
+            <li>IOT 드론 개발 ( CISCO )</li> <br>
+            <li>실내용 드론 개발 ( CISCO )</li> <br>
+            <li>비행시험용 무인기 개발( 한화시스템 )</li> <br>
+            <li>대대급 멀티 틸트콥터 무인기 Zephirus 개발 ( FineDNC ) </li><br>
+            <li>레이다 정밀도 측정용 장비개발 ( 한화시스템 )</li> <br>
+            <li>군집비행용 드론제어 시스템 개발 ( 국방과학연구소 )</li> <br>
+            <li>3D 맵핑용 드론 개발( 두산인프라코어 ) </li><br>
+            <li>미사일 모의비행체 개발( LIG nex1 ) </li><br>
+            <li>레이저 데즐링용 드론개발 ( 국방과학연구소 ) </li><br>
+        </ul>
         <div class="works__partners"></div>
       </div>
     </section>

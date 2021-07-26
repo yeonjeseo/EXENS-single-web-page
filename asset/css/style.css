@@ -3,8 +3,10 @@
 
 /* VARIABLES */
 :root {
+
   /* Header Height */
   --header-height: 3rem;
+
   /* Colors */
   --first-color: black;
   --title-color: black;
@@ -75,12 +77,17 @@ ul {
 a {
   text-decoration: none;
 }
+
 /* Class CSS */
 
-.section-title,
-.section-subtitle {
+h3 {
   text-align: center;
 }
+
+/* .section__title,
+.section__subtitle {
+  text-align: center;
+} */
 
 /* Layout */
 .bd-container {
@@ -90,7 +97,7 @@ a {
   margin-right: var(--mb-2);
 }
 
-.l-header {
+header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -98,6 +105,7 @@ a {
   z-index: var(--z-fixed);
   background-color: var(--header-color);
 }
+
 /* NAV */
 .nav {
   max-width: 1024px;
