@@ -15,10 +15,13 @@
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header class="l-header" id="header">
     <div class="nav bd-container">
-      <a href="#" class="nav__logo">로고 자리</a>
+      <h1>
+        <a href="#" class="nav__logo">로고 자리</a>
+      </h1>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
@@ -41,16 +44,24 @@
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <img class="slide__img" src="asset/img/slideshow/raptor.jpeg">
+        <div class="placeholder">
+          <p>EXENS 미친듯이 좋음</p>
+        </div>
       </div>
 
       <div class="mySlides fade">
         <img class="slide__img" src="asset/img/slideshow/eurofighter.jpeg">
+        <div class="placeholder">
+          <p>EXENS 미친듯이 좋음</p>
+        </div>
       </div>
 
       <div class="mySlides fade">
         <img class="slide__img" src="asset/img/slideshow/spacex.jpeg">
+        <div class="placeholder">
+          <p>EXENS 미친듯이 좋음</p>
+        </div>
       </div>
-
       <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -65,7 +76,7 @@
 
     <!-- ABOUT -->
     <!-- 교수님 인사말 / 보유 기술? -->
-    <section class="about" id="about">
+    <section class="section section__about" id="about">
       <div class="about__dataContainer">
         <h2 class="section-title">About Us</h2>
 
@@ -112,14 +123,41 @@
         </div>
       </div>
 
-
+      <h3 class="section__subtitle">Patents</h3>
       <div class="about__patents">
-        <ul class="patents__list">
-          <li class="patent__item"></li>
-          <li class="patent__item"></li>
-          <li class="patent__item"></li>
-          <li class="patent__item"></li>
-        </ul>
+        <table class="patents__table">
+          <tr class="table__head">
+            <th>No.</th>
+            <th>출원 국가</th>
+            <th>발행 번호</th>
+            <th>특허명</th>
+          </tr>
+          <tr class="table__item" id="item1">
+            <td>1</td>
+            <td>대한민국</td>
+            <td>1017772730000</td>
+            <td>드론의 정밀 착륙을 위한 도킹 장치</td>
+          </tr>
+          <tr class="table__item" id="item2">
+            <td>2</td>
+            <td>대한민국</td>
+            <td>1013869590000</td>
+            <td>다축 다단계 틸트 멀티로터 플라잉카</td>
+          </tr>
+          <tr class="table__item" id="item3">
+            <td>3</td>
+            <td>대한민국</td>
+            <td>1018063050000</td>
+            <td>폭격 피해 평가를 위한 영상 자료를 수집 및 제공하는 드론을 구비한 무장 시스템</td>
+          </tr>
+          <tr class="table__item" id="item4">
+            <td>4</td>
+            <td>미국</td>
+            <td>9682772</td>
+            <td>Multi-Stage Tilting And Multi-Rotor Flying Car</td>
+          </tr>
+
+        </table>
       </div>
       </div>
     </section>
@@ -145,25 +183,28 @@
 
   <!-- FOOTER -->
   <!-- 상호, 주소, 연락처 등 -->
-  <footer class="footer section">
-    <div class="footer__container">
-
-      <div class="footer__info">
-        <span>상호 : (주) 엑센스 <br>
-          대표 : 윤광준<br>
-          사업자등록번호 : 206-86-45856<br>
-          주소 : 서울 특별시 광진구 자양로 147 2층</span>
+  <footer class="footer">
+    <div class="footer__container section">
+      <div class="footer__content">
+        <p>
+          상호 : (주) 엑센스 대표 : 윤광준 | 사업자등록번호 : 206-86-45856<br>
+        주소 : 서울 특별시 광진구 자양로 147 2층
+        </p>
       </div>
 
-      <div class="footer__contact">
-        <span>전화 : +82 - (0)2 - 455 - 7061 <br>
-          견적 문의 : 010 - 6812 - 8585 <br>
-          팩스 : 02-455-7092 <br>
-          eMail : ghsong@exens.kr </span>
+      <div class="footer__content">
+        <p>
+            전화 : +82 - (0)2 - 455 - 7061 |
+            견적 문의 : 010 - 6812 - 8585 |
+            팩스 : 02-455-7092 |
+            eMail : ghsong@exens.kr
+        </p>
       </div>
 
+      <div class="footer__content">
+        <p>Copyright &#169; 2021 (주)엑센스. All Rights Reserved.</p>
+      </div>
     </div>
-    <p class="footer__copy">Copyright &#169; 2021 (주)엑센스. All Rights Reserved.</p>
   </footer>
 </body>
 

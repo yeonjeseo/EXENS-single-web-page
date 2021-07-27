@@ -11,6 +11,7 @@
   display: none;
   width: 100%;
   margin: 0;
+  text-align: center;
 }
 
 /* Next & previous buttons */
@@ -34,6 +35,14 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+}
+
+.placeholder {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  color: black;
+  opacity: 0.7;
 }
 /* Position the "next button" to the right */
 .next {

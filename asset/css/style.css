@@ -4,14 +4,16 @@
 /* VARIABLES */
 :root {
   /* Header Height */
-  --header-height: 3rem;
+  --header-height: 5rem;
   /* Colors */
   --first-color: black;
   --title-color: black;
-  --text-color: black;
+  --text-color-light: black;
+  --text-color-dark: rgba(230, 238, 196, 0.973);
   --body-color: rgba(233, 229, 229, 0.966);
   --container-color: black;
-  --header-color: rgba(240, 212, 212, 0.836);
+  --header-color: rgba(18, 85, 185, 0.836);
+  --footer-bg-color: rgba(13, 30, 88, 0.205);
 
   /* FONTS & TYPOGRAPHY */
   --body-font: "Noto Sans KR", sans-serif;
@@ -60,7 +62,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  line-height: 1.6;
 }
 
 h1,
@@ -100,6 +101,10 @@ a {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--header-color);
+}
+
+.l-main {
+  margin-top: var(--header-height);
 }
 /* NAV */
 .nav {
@@ -169,7 +174,8 @@ a {
   }
 
   .section {
-    padding-top: 8rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .nav {
@@ -233,8 +239,38 @@ a {
   margin-left: 2rem;
 }
 
+/* Table */
+.about__patents {
+  margin-top: var(--mb-6);
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+tr {
+  height: 3rem;
+}
+
+.table__head {
+  background-color: rgb(173, 175, 174);
+}
+
+#item2,
+#item4 {
+  background-color: rgba(214, 214, 214, 0.959);
+}
+
 /* FOOTER */
+footer {
+  background-color: var(--footer-bg-color);
+  margin-bottom: 0;
+  bottom: 0;
+}
 .footer__container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
