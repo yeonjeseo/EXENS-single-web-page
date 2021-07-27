@@ -13,6 +13,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/slideshow.css">
+  <link rel="stylesheet" href="asset/css/mailbox.css">
   
   <!-- JavaScript -->
   <script defer src="asset/js/main.js"></script>
@@ -95,25 +96,26 @@
     </section>
 
     <!-- ABOUT (CEO MESSAGE, 보유 특허) -->      
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__container bd-container">
-        <h2>ABOUT</h2>
-          <h3>CEO Message</h3>
-            <div class="ceo__greeting">
-              <img class="ceo__avater" src="asset/img/greeting/yoon.jpeg" alt="yoon's avatar">
-              <div class="ceo__typo">
-                <p>EXENS는 무인항공기(드론 및 고정익(시장의 가치 창출을 위하여 신기술 개발 및 지원틀 통해 최고 수준의 무인기 공학 시스템(EXENS, EXtreme ENgineering System)을 연구하는 기업입니다.<br><br>EXENS는 무인항공기 분야의 벤처기업으로서 무인항공기 분야의 EXtreme ENgineering System 구현을 위해,        
-                <ul>
-                  <li>- 소형 고정익 무인비행체</li>
-                  <li>- Multi-Rotor 무인 드론</li>
-                  <li>- 초소형 비행체 항공기</li>
-                  <li>- 지능 구조물 시스템</li>
-                </ul>
-                  관련 원천 기술을 개발하고, 신제품 개발에 실패가 없도록 고객사의 니즈에 부합한 맞춤형 솔루션을 제안하고 적요하는데 필요한 기술을 지원합니다.<br>
-                  귀사께서 목표로 하는 최고의 제품을 개발하여 제공해드리는 파트너가 되도록 하겠습니다.
-              </p>
+        <br>
+          <h2>ABOUT</h2>
+            <h3>CEO Message</h3>
+              <div class="ceo__greeting">
+                <img class="ceo__avater" src="asset/img/greeting/yoon.jpeg" alt="yoon's avatar">
+                <div class="ceo__typo">
+                  <p>EXENS는 무인항공기(드론 및 고정익(시장의 가치 창출을 위하여 신기술 개발 및 지원틀 통해 최고 수준의 무인기 공학 시스템(EXENS, EXtreme ENgineering System)을 연구하는 기업입니다.<br><br>EXENS는 무인항공기 분야의 벤처기업으로서 무인항공기 분야의 EXtreme ENgineering System 구현을 위해,        
+                  <ul>
+                    <li>- 소형 고정익 무인비행체</li>
+                    <li>- Multi-Rotor 무인 드론</li>
+                    <li>- 초소형 비행체 항공기</li>
+                    <li>- 지능 구조물 시스템</li>
+                  </ul>
+                    관련 원천 기술을 개발하고, 신제품 개발에 실패가 없도록 고객사의 니즈에 부합한 맞춤형 솔루션을 제안하고 적요하는데 필요한 기술을 지원합니다.<br>
+                    귀사께서 목표로 하는 최고의 제품을 개발하여 제공해드리는 파트너가 되도록 하겠습니다.
+                </p>
+                </div>
               </div>
-            </div>
         
         <div class="about__patents">
           <ul class="patents__list">
@@ -130,7 +132,8 @@
     <section class="works" id="works">
       <div class="works__container bd-container">
         <div class="works__portfolio"></div>
-          <h2>WORKS</h2>
+        <br>  
+        <h2>WORKS</h2>
           <ul>
             <li>FCC( Flight Control Computer ), GCS( Ground Control System ) 개발 </li><br>
             <li>감시 정찰용 MAV( Micro Air Vehicle ) 개발 ( Bhimasena Indonesia )</li> <br>
@@ -145,7 +148,7 @@
             <li>3D 맵핑용 드론 개발( 두산인프라코어 ) </li><br>
             <li>미사일 모의비행체 개발( LIG nex1 ) </li><br>
             <li>레이저 데즐링용 드론개발 ( 국방과학연구소 ) </li><br>
-        </ul>
+          </ul>
         <div class="works__partners"></div>
       </div>
     </section>
@@ -157,6 +160,38 @@
         <h2>CONTACT</h2>
         귀사의 성공적인 결과물 창출을 위한 든든한 파트너가 되겠습니다.<br>
         <br>
+        
+        <!-- 메일 보내기 폼-->
+        <div class="mailcontainer">
+          <div class="mailbox">
+            <form action="">
+              <div class="form-group">
+                <label for="firstName"> First Name</label>
+                <input type="text" id="firstName" name="firstName">
+              </div>
+
+              <div class="form-group">
+                <label for="lastName"> Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+
+              <button type="submit" onclick="alert('메일을 성공적으로 보냈습니다.')";>Submit</button>
+            </form>
+
+          </div>
+         <div id="status">Success</div>
+        </div>
+
         <br>
         <br>
         <div class="contact__email"></div>

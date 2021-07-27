@@ -90,13 +90,6 @@ h3 {
 } */
 
 /* Layout */
-.bd-container {
-  max-width: 960px;
-  width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -104,6 +97,13 @@ header {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--header-color);
+}
+
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
 }
 
 /* NAV */
