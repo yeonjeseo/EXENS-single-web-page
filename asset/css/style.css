@@ -3,8 +3,14 @@
 
 /* VARIABLES */
 :root {
+
   /* Header Height */
+<<<<<<< HEAD
   --header-height: 5rem;
+=======
+  --header-height: 3rem;
+
+>>>>>>> cd63ca3
   /* Colors */
   --first-color: black;
   --title-color: black;
@@ -84,17 +90,29 @@ h2 {
 a {
   text-decoration: none;
 }
+
 /* Class CSS */
 
+<<<<<<< HEAD
 /* Layout */
 /* .bd-container {
   max-width: 960px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+=======
+h3 {
+  text-align: center;
+}
+
+/* .section__title,
+.section__subtitle {
+  text-align: center;
+>>>>>>> cd63ca3
 } */
 
-.l-header {
+/* Layout */
+header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -103,9 +121,19 @@ a {
   background-color: var(--header-color);
 }
 
+<<<<<<< HEAD
 .l-main {
   margin-top: var(--header-height);
 }
+=======
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+>>>>>>> cd63ca3
 /* NAV */
 .nav {
   max-width: 1024px;

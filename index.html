@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXENS</title>
+
   <!-- BOXICON -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- CSS -->
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="asset/css/slideshow.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="asset/css/mailbox.css">
+  
+  <!-- JavaScript -->
   <script defer src="asset/js/main.js"></script>
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <header class="l-header" id="header">
+  <header>
     <div class="nav bd-container">
       <h1>
         <a href="#" class="nav__logo">로고 자리</a>
@@ -163,10 +168,26 @@
     </section>
 
     <!-- WORKS -->
-    <!-- PORTFOLIO / PARTNERS -->
     <section class="works" id="works">
       <div class="works__container">
         <div class="works__portfolio"></div>
+        <br>  
+        <h2>WORKS</h2>
+          <ul>
+            <li>FCC( Flight Control Computer ), GCS( Ground Control System ) 개발 </li><br>
+            <li>감시 정찰용 MAV( Micro Air Vehicle ) 개발 ( Bhimasena Indonesia )</li> <br>
+            <li>틸트 멀티콥터 UAV 개발 ( 중소기업청 )</li><br>
+            <li>농업용 멀티콥터 개발</li> <br>
+            <li>IOT 드론 개발 ( CISCO )</li> <br>
+            <li>실내용 드론 개발 ( CISCO )</li> <br>
+            <li>비행시험용 무인기 개발( 한화시스템 )</li> <br>
+            <li>대대급 멀티 틸트콥터 무인기 Zephirus 개발 ( FineDNC ) </li><br>
+            <li>레이다 정밀도 측정용 장비개발 ( 한화시스템 )</li> <br>
+            <li>군집비행용 드론제어 시스템 개발 ( 국방과학연구소 )</li> <br>
+            <li>3D 맵핑용 드론 개발( 두산인프라코어 ) </li><br>
+            <li>미사일 모의비행체 개발( LIG nex1 ) </li><br>
+            <li>레이저 데즐링용 드론개발 ( 국방과학연구소 ) </li><br>
+          </ul>
         <div class="works__partners"></div>
       </div>
     </section>
@@ -174,9 +195,47 @@
     <!-- CONTACT -->
     <!-- EMAIL, MAP -->
     <section class="contact" id="contact">
-      <div class="contact__container">
+      <div class="contact__container bd-container">
+        <h2>CONTACT</h2>
+        귀사의 성공적인 결과물 창출을 위한 든든한 파트너가 되겠습니다.<br>
+        <br>
+        
+        <!-- 메일 보내기 폼-->
+        <div class="mailcontainer">
+          <div class="mailbox">
+            <form action="">
+              <div class="form-group">
+                <label for="firstName"> First Name</label>
+                <input type="text" id="firstName" name="firstName">
+              </div>
+
+              <div class="form-group">
+                <label for="lastName"> Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+
+              <button type="submit" onclick="alert('메일을 성공적으로 보냈습니다.')";>Submit</button>
+            </form>
+
+          </div>
+        <div id="status">Success</div>
+        </div>
+
+        <br>
+        <br>
         <div class="contact__email"></div>
         <div class="contact__map"></div>
+        <h3>오시는 길</h3>
       </div>
     </section>
   </main>
