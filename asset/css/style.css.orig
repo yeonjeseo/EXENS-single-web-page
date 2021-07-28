@@ -3,6 +3,7 @@
 
 /* VARIABLES */
 :root {
+
   /* Header Height */
   --header-height: 5rem;
   /* Colors */
