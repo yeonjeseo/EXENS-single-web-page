@@ -1,5 +1,4 @@
 "use strict";
-
 /************* SHOW MENU *************/
 const showMenu = () => {
   const toggle = document.getElementById("nav-toggle"),

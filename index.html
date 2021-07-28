@@ -17,6 +17,33 @@
 
   <!-- JavaScript -->
   <script defer src="asset/js/main.js"></script>
+
+  <!-- emailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_lIEcZi4awRHqgiziPAV3Z");
+    })();
+
+    let templateParams = {
+      to_name: 'Yeonje Seo',
+      from_name: 'Check this out!',
+      message: 'Fuck you Ricky'
+    };
+
+    function sendEmail(){
+      emailjs.send('service_tui1gcl', 'template_p1fingl', templateParams)
+      .then(function (response) {
+        alert("메일을 성공적으로 보냈습니다.");
+        console.log('SUCCESS!', response.status, response.text);
+      }, function (error) {
+        alert("시스템 점검 중입니다.");
+        console.log('FAILED...', error);
+      });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -91,7 +118,8 @@
               <div class="data__item">
                 <div class="data__title">EXENS</div>
                 <img class="data__img" src="asset/img/about/2025680.svg" alt="drone-svg">
-                <div class="data__description">EXENS는 무인항공기(드론 및 고정익)시장의 가치 창출을 위해 신기술 개발 및 지원을 통해 최고 수준의 무인기 공학 시스템을 연구하는
+                <div class="data__description">EXENS는 무인항공기(드론 및 고정익)시장의 가치 창출을 위해 신기술 개발 및 지원을 통해 최고 수준의 무인기 공학 시스템을
+                  연구하는
                   기업입니다.</div>
               </div>
               <div class="data__item">
@@ -109,9 +137,9 @@
               </div>
             </div>
           </div>
-  
+
         </div>
-  
+
         <div class="about__ceoContainer">
           <h3 class="section-subtitle">CEO Message</h3>
           <div class="ceo__greeting">
@@ -131,7 +159,7 @@
             </div>
           </div>
         </div>
-  
+
         <h3 class="section-subtitle">Patents</h3>
         <div class="about__patents">
           <table class="patents__table">
@@ -165,10 +193,10 @@
               <td>9682772</td>
               <td>Multi-Stage Tilting And Multi-Rotor Flying Car</td>
             </tr>
-  
+
           </table>
         </div>
-        </div>
+      </div>
       </div>
     </section>
 
@@ -179,18 +207,23 @@
         <div class="works__container">
           <ul class="protfolio__List">
             <li><img class="portfolio__img" src="asset/img/partners/ADD.jpeg" alt="">레이저 데즐링용 드론개발 ( 국방과학연구소 ) </li>
-            <li><img class="portfolio__img" src="asset/img/partners/ADD.jpeg" alt="">군집비행용 드론제어 시스템 개발 ( 국방과학연구소 )</li> 
+            <li><img class="portfolio__img" src="asset/img/partners/ADD.jpeg" alt="">군집비행용 드론제어 시스템 개발 ( 국방과학연구소 )</li>
             <li><img class="portfolio__img" src="asset/img/partners/lig.jpeg" alt="">미사일 모의비행체 개발( LIG nex1 ) </li>
-            <li><img class="portfolio__img" src="asset/img/partners/hanhwasys.png" alt="">레이다 정밀도 측정용 장비개발 ( 한화시스템 )</li> 
-            <li><img class="portfolio__img" src="asset/img/partners/hanhwasys.png" alt="">비행시험용 무인기 개발( 한화시스템 )</li> 
-            <li><img class="portfolio__img" src="asset/img/partners/cisco.png" alt="">IOT 드론 개발 ( CISCO )</li> 
-            <li><img class="portfolio__img" src="asset/img/partners/cisco.png" alt="">실내용 드론 개발 ( CISCO )</li> 
-            <li><img class="portfolio__img" src="asset/img/partners/finednc.jpeg" alt="">대대급 멀티 틸트콥터 무인기 Zephirus 개발 ( FineDNC ) </li>
+            <li><img class="portfolio__img" src="asset/img/partners/hanhwasys.png" alt="">레이다 정밀도 측정용 장비개발 ( 한화시스템 )
+            </li>
+            <li><img class="portfolio__img" src="asset/img/partners/hanhwasys.png" alt="">비행시험용 무인기 개발( 한화시스템 )</li>
+            <li><img class="portfolio__img" src="asset/img/partners/cisco.png" alt="">IOT 드론 개발 ( CISCO )</li>
+            <li><img class="portfolio__img" src="asset/img/partners/cisco.png" alt="">실내용 드론 개발 ( CISCO )</li>
+            <li><img class="portfolio__img" src="asset/img/partners/finednc.jpeg" alt="">대대급 멀티 틸트콥터 무인기 Zephirus 개발 (
+              FineDNC ) </li>
             <li><img class="portfolio__img" src="asset/img/partners/doosan.jpeg" alt="">3D 맵핑용 드론 개발( 두산인프라코어 ) </li>
-            <li><img class="portfolio__img" src="asset/img/partners/bihmasena.png" alt="">감시 정찰용 MAV( Micro Air Vehicle ) 개발 ( Bhimasena Indonesia )</li> 
-            <li><img class="portfolio__img" src="asset/img/partners/다운로드.png" alt="">FCC( Flight Control Computer ), GCS( Ground Control System ) 개발 </li>
-            <li> <img class="portfolio__img" src="asset/img/partners/다운로드.png" alt=""> 틸트 멀티콥터 UAV 개발 ( 중소기업청 )</li>
-            <li> <img class="portfolio__img" src="asset/img/partners/농림부.png" alt=""> 농업용 멀티콥터 개발</li> 
+            <li><img class="portfolio__img" src="asset/img/partners/bihmasena.png" alt="">감시 정찰용 MAV( Micro Air Vehicle
+              ) 개발 ( Bhimasena Indonesia )</li>
+            <li><img class="portfolio__img" src="asset/img/partners/다운로드.png" alt="">FCC( Flight Control Computer
+              ), GCS( Ground Control System ) 개발 </li>
+            <li> <img class="portfolio__img" src="asset/img/partners/다운로드.png" alt=""> 틸트 멀티콥터 UAV 개발 ( 중소기업청 )
+            </li>
+            <li> <img class="portfolio__img" src="asset/img/partners/농림부.png" alt=""> 농업용 멀티콥터 개발</li>
           </ul>
           <div class="works__partners"></div>
         </div>
@@ -207,7 +240,7 @@
           <p>
             귀사의 성공적인 결과물 창출을 위한 든든한 파트너가 되겠습니다.
           </p>
-  
+
           <!-- 메일 보내기 폼-->
           <div class="mailcontainer">
             <div class="mailbox">
@@ -216,29 +249,29 @@
                   <label for="firstName"> First Name</label>
                   <input type="text" id="firstName" name="firstName">
                 </div>
-  
+
                 <div class="form-group">
                   <label for="lastName"> Last Name</label>
                   <input type="text" id="lastName" name="lastName">
                 </div>
-  
+
                 <div class="form-group">
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email">
                 </div>
-  
+
                 <div class="form-group">
                   <label for="message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
-  
-                <button type="submit" onclick="alert('메일을 성공적으로 보냈습니다.')" ;>Submit</button>
+
+                <button id="btn__sendEmail" type="submit" onclick="sendEmail(); return false">Submit</button>
               </form>
-  
+
             </div>
             <div id="status">Success</div>
           </div>
-  
+
           <h3 class="section-subtitle">오시는 길</h3>
           <div class="contact__container">
             <div class="contact__address">
