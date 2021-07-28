@@ -1,18 +1,17 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-
 /* VARIABLES */
 :root {
   /* Header Height */
   --header-height: 5rem;
   /* Colors */
-  --first-color: black;
-  --title-color: black;
+  --primary-color: rgb(22, 90, 192);
+  --secondary-color: rgb(17, 158, 146);
   --text-color-light: black;
   --text-color-dark: rgba(230, 238, 196, 0.973);
   --body-color: rgba(233, 229, 229, 0.966);
   --container-color: black;
-  --header-color: rgba(18, 85, 185, 0.836);
+  --header-color: rgb(22, 90, 192);
   --footer-bg-color: rgba(13, 30, 88, 0.205);
 
   /* FONTS & TYPOGRAPHY */
@@ -43,6 +42,7 @@
   /* z - index */
   --z-normal: 10;
   --z-fixed: 100;
+  overscroll-behavior: none;
 }
 
 /* BASE */
@@ -85,6 +85,22 @@ a {
   text-decoration: none;
 }
 
+.section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+/* Global */
+.section-title {
+  color: var(--secondary-color);
+}
+
 /* Class CSS */
 
 /* Layout */
@@ -116,21 +132,24 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.nav__toggle {
-  color: var(--text-color);
-  font-weight: var(--font-medium);
-}
-
-.nav__item {
-  margin-bottom: var(--mb-2);
-}
-
 .nav__link,
 .nav__logo,
 .nav__toggle {
   color: var(--text-color);
   font-weight: var(--font-medium);
+}
+
+.nav__toggle {
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+.logo__img {
+  width: 25%;
+}
+
+.nav__item {
+  margin-bottom: var(--mb-2);
 }
 
 .nav__toggle {
@@ -171,15 +190,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    margin: 0;
-  }
-
-  .section {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   .nav {
     height: calc(--header-height + 1.5rem);
   }
@@ -207,7 +217,7 @@ header {
   margin-top: 5rem;
 }
 
-.about__data {
+.whatwedo__data {
   display: flex;
   justify-content: space-evenly;
 }
@@ -265,6 +275,14 @@ tr {
 #item4 {
   background-color: rgba(214, 214, 214, 0.959);
 }
+#item1,
+#item3 {
+  background-color: white;
+}
+
+.section__works {
+  background-color: white;
+}
 
 /* FOOTER */
 footer {
@@ -275,4 +293,13 @@ footer {
 .footer__container {
   display: flex;
   flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.portfolio__img {
+  width: 20%;
+}
+
+.protfolio__List {
 }
