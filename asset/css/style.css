@@ -152,6 +152,10 @@ header {
   transition: 0.4s;
 }
 
+.nav__link:hover {
+  font-size: 1.3rem;
+}
+
 /* Media query for nav */
 @media screen and (max-width: 768px) {
   /* 768px 이하일 때 위로 숨겨놓고 햄버거 클릭하면 slide down */
