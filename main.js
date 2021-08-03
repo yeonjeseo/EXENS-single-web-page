@@ -1,73 +1,16 @@
 "use strict";
-/************* SHOW MENU *************/
-const showMenu = () => {
-  const toggle = document.getElementById("nav-toggle"),
-    nav = document.getElementById("nav-menu");
-
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show-menu");
-      console.log("toggle");
-    });
-  }
-};
-showMenu();
-
-/************* SLIDE SHOW *************/
-var slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  // var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  slides[slideIndex - 1].style.display = "block";
-  // dots[slideIndex - 1].className += " active";
-}
-
-/*================== Scroll Reveal Animation ==================*/
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "30px",
-  duration: 2000,
-  reset: true,
-});
-
-sr.reveal(`.data__item`, {
-  interval: 200,
-});
-
 /*================== Email ==================*/
 (function () {
   emailjs.init("user_lIEcZi4awRHqgiziPAV3Z");
 })();
 
-const btnSend = document.getElementById("btnSend");
+const btnSend = document.getElementById("btnSubmit");
 btnSend.addEventListener("click", (e) => {
   e.preventDefault();
   let templateParams = {
-    toName: document.getElementById("firstName").value,
-    fromName: document.getElementById("lastName").value,
-    replyTo: document.getElementById("email").value,
+    fullName: document.getElementById("fullName").value,
+    phoneNumber: document.getElementById("phoneNumber").value,
+    replyTo: document.getElementById("emailAddress").value,
     message: document.getElementById("messageBox").value,
   };
   console.log(templateParams);
@@ -87,5 +30,3 @@ function sendEmail(templateParams) {
     }
   );
 }
-
-const mainImg = document.querySelector(".main__image");
