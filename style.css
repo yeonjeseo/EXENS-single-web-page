@@ -1,0 +1,460 @@
+/*================================== 
+                기본
+==================================*/
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BBTreeCB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeCB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding-top: 85px;
+  width: 100%;
+}
+
+/*================================== 
+                헤더
+==================================*/
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  /* margin: 0 auto; */
+  padding: 0 150px;
+  background-color: white;
+}
+
+/* 로고 */
+h1 {
+  font-size: 1px;
+  margin: 0;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  padding-top: 10%;
+}
+
+/* 내비게이션 */
+ul {
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 32px;
+  list-style: none;
+  font-weight: 500;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 36px;
+}
+
+ul a {
+  color: #1f478e;
+  text-decoration: none;
+}
+
+ul a:hover {
+  color: whitesmoke;
+  background-color: #1f478e;
+  font-size: 1.5rem;
+  padding: 3px 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+/*================================== 
+            풀스크린 이미지
+==================================*/
+
+#main-image {
+  height: 93vh;
+  background-image: url("images/main.png");
+  background-size: cover;
+  background-position: center;
+}
+#main-copy {
+  color: white;
+  text-align: center;
+  font-family: "Pretendard-Regular";
+  font-weight: 800;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0 auto;
+  padding-top: 51vh;
+}
+
+/* #main-copy {
+  font-family: "Pretendard-Regular";
+  font-weight: 800;
+  text-align: center;
+  font-size: 4rem;
+} */
+
+/*================================== 
+            인트로
+==================================*/
+
+#intro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.intro_title {
+  color: #1f478e;
+  font-size: 4rem;
+  font-weight: 650;
+  text-shadow: 4px 4px 0px #a5a0a1;
+}
+
+.intro_fullname {
+  color: #1f478e;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/*================================== 
+            콘텐츠 공통
+==================================*/
+
+/*섹션 레이아웃*/
+section {
+  padding: 50px 10%;
+}
+
+/*섹션 타이틀*/
+.section_title {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: #1f478e;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #1f478e;
+  width: 15%;
+  margin: 0;
+  margin-left: 1%;
+}
+
+/*================================== 
+            ABOUT
+==================================*/
+.about {
+  background-color: rgba(233, 229, 229, 0.966);
+}
+
+/* 소제목 */
+h3 {
+  color: #1f478e;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* What We Do */
+
+.whatwedo_container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.whatwedo_itemtitle {
+  font-family: "Pretendard-Regular";
+  font-weight: 800;
+}
+
+.whatwedo_item {
+  width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.whatwedo_image {
+  width: 30%;
+  margin: 20%;
+}
+
+.whatwedo_description {
+  font-size: 1rem;
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+/* CEO Message */
+.section_ceomessage {
+  background-color: #1f478e;
+  color: white;
+  font-family: "Pretendard-Regular";
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+h4 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.ceomessage_itemcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ceo_name {
+  font-family: "BBTreeCB";
+  font-size: 1.5rem;
+}
+/*================================== 
+            Patent & Technology
+==================================*/
+/* 보유 특허 */
+h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1f478e;
+}
+
+.patents__table {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  height: 200px;
+  font-family: "Pretendard-Regular";
+}
+
+.table__head {
+  background-color: #4f81bd;
+}
+
+#item1,
+#item3 {
+  background-color: #dbe4f1;
+}
+
+#item2,
+#item4 {
+  background-color: #b8cce4;
+}
+
+/* 보유 기술 */
+#technology {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/*================================== 
+            WORKS
+==================================*/
+#works {
+  background-color: white;
+}
+
+.works_container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.works_item {
+  width: 400px;
+  text-align: center;
+}
+
+.works_image {
+  width: 50%;
+  margin: 10% 10% 5% 10%;
+}
+
+.works_description {
+  width: 400px;
+  color: #1f478e;
+  font-size: 1.1rem;
+  font-family: "Pretendard-Regular";
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/*================================== 
+            CONTACT
+==================================*/
+#contact {
+  background-color: rgba(233, 229, 229, 0.966);
+}
+.contactEmail__container {
+  margin: 0 10%;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  /* padding: 0.5rem 0.5rem; */
+}
+#contact-nameNumber {
+  display: flex;
+  justify-content: center;
+}
+.email-form {
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.form-sub {
+  width: 100%;
+}
+.form-name {
+  padding-right: 1rem;
+}
+.form-number {
+  padding-left: 1rem;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #4f81bd;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+/*================================== 
+            푸터
+==================================*/
+
+footer {
+  background-color: rgb(54, 54, 54);
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 15%;
+  padding: 30px 0 40px 0;
+  color: white;
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+/*================================== 
+            미디어쿼리(모바일)
+==================================*/
+@media screen and (max-width: 768px) {
+  /*================================== 
+                헤더
+==================================*/
+  #main-copy {
+    font-size: 2rem;
+  }
+
+  header {
+    margin: 0;
+    padding: 0 3%;
+  }
+
+  .logo {
+    width: 100px;
+    padding-top: 20%;
+  }
+
+  /* 내비게이션 */
+  ul {
+    font-size: 1rem;
+    margin-top: 35px;
+  }
+
+  ul li {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  /*================================== 
+          Patent & Technology
+==================================*/
+  .about {
+    padding: 3%;
+  }
+
+  /* 보유 특허 */
+  h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f478e;
+  }
+
+  .patents__table {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%; /**/
+    height: 200px;
+    font-family: "Pretendard-Regular";
+    font-size: 0.3rem;
+  }
+
+  /* 보유 기술 */
+  #technology {
+    display: block;
+    width: 100%;
+  }
+
+  /*================================== 
+            CONTACT
+==================================*/
+
+  button {
+    width: 100px; /**/
+    font-size: 1.2rem; /**/
+  }
+} /* 미디어쿼리 끝 */
